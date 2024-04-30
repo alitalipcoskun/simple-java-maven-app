@@ -5,6 +5,7 @@ pipeline{
             steps{
                 sh '''
                     echo build
+                    pwd
                     mvn --version
                    '''
             }
