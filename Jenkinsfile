@@ -11,26 +11,5 @@ pipeline{
                 '''
             }
         }
-        stage('Test'){
-            steps{
-                sh '''
-                echo Test
-                '''
-            }
-        }
-        stage('Push'){
-            steps{
-                sh '''
-                echo Push
-                '''
-            }
-        }
-        stage('Deploy'){
-            steps{
-                sh '''
-                echo Deploy
-                '''
-            }
-        }
     }
 }
