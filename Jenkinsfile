@@ -5,10 +5,8 @@ pipeline{
             steps{
                 sh '''
                     echo build
+                    mvn --version
                    '''
-                sh '''
-                mvn -B -DskipTests clean package
-                '''
             }
         }
     }
