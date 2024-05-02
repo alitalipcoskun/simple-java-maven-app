@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    environment{
-        EXAMPLE_CRED = credentials('first_secret_text')
-    }
     stages{
         stage('Build'){
             tools{
