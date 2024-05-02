@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             environment {
-                PATH = "/home/jenkins/apache-maven-3.8.6/bin"
+                PATH = "/home/jenkins/apache-maven-3.8.6/bin:${env.PATH}"
                 }
             steps{
                 sh '''
