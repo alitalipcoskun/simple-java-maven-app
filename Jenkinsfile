@@ -11,9 +11,6 @@ pipeline{
             }
             steps{
                 sh '''
-                    echo build
-                    echo ${EXAMPLE_CRED}
-                    pwd
                     mvn --version
                    '''
             }
