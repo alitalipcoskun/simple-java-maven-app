@@ -6,8 +6,8 @@ pipeline{
     stages{
         stage('Build'){
             tools{
-                maven 'mvn 3.0.5'
-                jdk 'jdk-1.8.0'
+                maven MAVEN_HOME
+                jdk JAVA_HOME
             }
             steps{
                 sh '''
