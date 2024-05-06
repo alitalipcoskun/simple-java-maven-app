@@ -8,7 +8,9 @@ pipeline{
             steps{
                 script{
                     sh ''' 
-                    mvn --version
+                    echo $M2_HOME
+                    echo $PATH
+                    mvn clean install
                     '''
                 }
             }
